@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #463f3a;
+  padding: 1rem;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+
+}
+
+.character-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.character-card {
+  border: 2px solid #370617;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  font-size: 3vw;
+  padding: 0.5em 0;
+}
+
+.healt-label {
+  text-align: left;
+}
+
+.avatar {
+  width: 250px;
+}
