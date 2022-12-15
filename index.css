@@ -1,42 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
-* {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #463f3a;
-  padding: 1rem;
-  color: white;
+  background-color: #2d3142;
   font-family: 'MedievalSharp', cursive;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 0.5em;
 }
 
 .character-container {
+  margin-top: 1rem;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
 }
 
 .character-card {
-  border: 2px solid #370617;
-  border-radius: 10px;
+  background-color: #242423;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 14px;
+  min-width: 250px;
+  box-shadow: inset 0px 0px 6px 2px rgba(100, 100, 100, 0.2), 0px 0px 10px rgba(117, 182, 214, 0.2);
 }
 
 .name {
-  font-size: 3vw;
-  padding: 0.5em 0;
-}
-
-.healt-label {
-  text-align: left;
+  margin: 0.5em 0;
+  font-size: 1.8rem;
 }
 
 .avatar {
-  width: 250px;
+  width: 20vw;
+  max-width: 15rem;
+}
+
+.health-container {
+  margin: 0.5em 0;
+  width: 90%;
+}
+
+.health-bar-outer {
+  background-color: #171217;
+  height: 0.35em;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.health-bar-inner {
+  background-color: limegreen;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.health-label {
+  font-size: 1.3rem;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.03em;
+}
+
+/* .danger {
+  background-color: rgb(179, 25, 25);
+  width: 30%;
+} */
+.dice-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  height: 7vh;
+  background-color: #0c1821;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.dice {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  width: 15%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.attack-button {
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.3em 1em;
+  margin-top: 0.5em;
+  border-radius: 0.65em;
+  cursor: pointer;
 }

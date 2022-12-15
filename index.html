@@ -16,11 +16,15 @@
         <h1 class="name">Wizard</h1>
         <img src="/images/wizard.png" alt="" class="avatar">
         <div class="health-container">
-          <p class="healt-label">Health:</p>
-          <div class="health-bar"></div>
+          <p class="health-label">health:</p>
+          <div class="health-bar-outer">
+            <div class="health-bar-inner danger"></div>
+          </div>
         </div>
         <div class="dice-container">
-          <div class="dice">1 5 4</div>
+          <div class="dice">1</div>
+          <div class="dice">5</div>
+          <div class="dice">4</div>
         </div>
       </div>
     </div>
@@ -29,8 +33,10 @@
         <h1 class="name">Orc</h1>
         <img src="/images/orc.png" alt="" class="avatar">
         <div class="health-container">
-          <p class="healt-label">Health:</p>
-          <div class="health-bar"></div>
+          <p class="health-label">health:</p>
+          <div class="health-bar-outer">
+            <div class="health-bar-inner danger"></div>
+          </div>
         </div>
         <div class="dice-container">
           <div class="dice">3</div>
@@ -38,7 +44,9 @@
       </div>
     </div>
   </section>
-  <section class="button-secton"></section>
+  <section class="button-secton">
+    <button class="attack-button">Attack</button>
+  </section>
 
   <script src="/index.js" type="model"></script>
 </body>
