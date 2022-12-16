@@ -16,12 +16,10 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 0.5em;
   height: 100vh;
 }
 
 .character-container {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,11 +36,10 @@ body {
   background-color: #242423;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border: 2px solid black;
-  border-radius: 10px;
-  min-width: 200px;
+  border-radius: 14px;
+  max-width: 40vw;
   box-shadow: inset 0px 0px 6px 2px rgba(100, 100, 100, 0.2), 0px 0px 10px 2px rgba(117, 182, 214, 0.2);
 }
 
@@ -61,7 +58,6 @@ body {
 
 @media (width > 550px) {
   .name {
-    margin: 0.8em 0;
     font-size: 1.8rem;
     letter-spacing: 0.1em;
   }
@@ -70,7 +66,7 @@ body {
 
 .avatar {
   width: 25vw;
-  max-width: 15rem;
+  max-width: 18rem;
   opacity: 0.8;
   border: 2px solid black;
   border-radius: 14px;
@@ -136,7 +132,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  height: 5vh;
+  height: 7vw;
   background-color: #0c1821;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -145,7 +141,7 @@ body {
 @media (width > 550px) {
   .dice-container {
     gap: 1em;
-    height: 8vh;
+    height: 10vh;
   }
 }
 
@@ -160,6 +156,8 @@ body {
   width: 15%;
   height: 70%;
   border-radius: 5px;
+  /* margin: 0.35em 0;
+  padding: 0.25em; */
 }
 
 .placeholder-text {
@@ -173,6 +171,7 @@ body {
   height: 70%;
   border: 1px solid white;
   border-radius: 5px;
+
 }
 
 @media (width > 550px) {
@@ -213,10 +212,9 @@ button:focus {
 }
 
 .end-game {
-  margin-top: 25%;
   text-align: center;
 }
 
 .end-emoji {
-  font-size: 80px;
+  font-size: 5rem;
 }

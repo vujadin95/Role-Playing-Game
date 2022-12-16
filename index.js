@@ -1,9 +1,8 @@
 import characterData from "./data.js";
 import Character from "./Character.js";
-import { getHealthPercentage } from "./functions.js";
 
 const monsters = ["orc", "demon", "goblin"];
-let isWaiting = false;
+let buttonIsWaiting = false;
 
 function getMonster() {
   const nextMonsterData = characterData[monsters.shift()];
@@ -30,7 +29,7 @@ function endGame() {
 }
 
 function attack() {
-  if (!isWaiting) {
+  if (!buttonIsWaiting) {
     hero.setDiceHtml();
     monster.setDiceHtml();
     hero.takeDamage(monster.currentDiceScore);
@@ -40,13 +39,13 @@ function attack() {
       endGame();
     }
     if (monster.dead) {
-      isWaiting = true;
+      buttonIsWaiting = true;
 
       if (monsters.length > 0) {
         setTimeout(() => {
           monster = getMonster();
           render();
-          isWaiting = false;
+          buttonIsWaiting = false;
         }, 1500);
       } else {
         endGame();
